@@ -55,11 +55,11 @@ const Wheel = ({
   const angle = getAngle(position.x, position.y);
 
   const getSteps = () => {
-    if (angle > 30 && angle <= 90) return 2;
-    else if (angle > 90 && angle <= 150) return 3;
+    if (angle > 30 && angle <= 90) return 6;
+    else if (angle > 90 && angle <= 150) return 5;
     else if (angle > 150 && angle <= 210) return 4;
-    else if (angle > 210 && angle <= 270) return 5;
-    else if (angle > 270 && angle <= 330) return 6;
+    else if (angle > 210 && angle <= 270) return 3;
+    else if (angle > 270 && angle <= 330) return 2;
     else return 1;
   };
 
@@ -67,13 +67,11 @@ const Wheel = ({
     if (player1.isActive) {
       setLoc1((prevLoc) => {
         const newLoc = Math.min(prevLoc + stepValue, 37);
-        console.log(`P1 moves to: ${newLoc}`);
         return newLoc;
       });
     } else {
       setLoc2((prevLoc) => {
         const newLoc = Math.min(prevLoc + stepValue, 37);
-        console.log(`P2 moves to: ${newLoc}`);
         return newLoc;
       });
     }
@@ -99,7 +97,8 @@ const Wheel = ({
     const parentElement1 = document.querySelector(query1);
 
     if (parentElement1) {
-      parentElement1.style.borderColor = player1.isActive ? "red" : "blue";
+      parentElement1.style.borderColor = player1.isActive ? "black" : "blue";
+      parentElement1.style.borderWidth = "3px";
       parentElement1.classList.add("active-cell");
     }
 
