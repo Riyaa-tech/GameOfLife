@@ -3,11 +3,11 @@ import "./GamePage.css";
 
 const professions = [
   { title: "Doctor", salary: 50000 },
-  { title: "Lawyer", salary: 50000 },
-  { title: "Teacher", salary: 20000 },
-  { title: "Chef", salary: 28000 },
-  { title: "Physicist", salary: 30000 },
-  { title: "Jounalist", salary: 24000 },
+  { title: "Lawyer", salary: 45000 },
+  { title: "Teacher", salary: 30000 },
+  { title: "Chef", salary: 25000 },
+  { title: "Physicist", salary: 40000 },
+  { title: "Jounalist", salary: 35000 },
 ];
 
 const ProfessionPicker = ({
@@ -74,7 +74,7 @@ const ProfessionPicker = ({
         </button>
 
         {showCard && selectedProfessions && (
-          <div className="card">
+          <div className="card2">
             <div className="displayProfessionData">
               <div>
                 <h1>{player1.name}</h1>
@@ -100,6 +100,7 @@ const ProfessionPicker = ({
                 </h2>
               </div>
             </div>
+            <br />
             <button onClick={confirmSelection}>Ok</button>
           </div>
         )}
