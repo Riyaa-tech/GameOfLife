@@ -26,7 +26,7 @@ const Revenge = ({
         amount: prev.amount - 25000,
       }));
       setRevengeTrigger1(true);
-      console.log("Revenge triggered for Player 1");
+      /*alert("Revenge triggered for Player 1");*/
     }
 
     if (!revengeTrigger2 && loc2 === locCell && activePlayer === player2) {
@@ -40,7 +40,7 @@ const Revenge = ({
         amount: prev.amount - 25000,
       }));
       setRevengeTrigger2(true);
-      console.log("Revenge triggered for Player 2");
+      /*alert("Revenge triggered for Player 2");*/
     }
   }, [
     activePlayer,
@@ -67,10 +67,10 @@ const Revenge = ({
 
   return (
     <div>
-      <div className="cell-v cell-30 cell-corner-bottom-left">
-        Revenge
+      <div className="cellFill">
+        🗡️ Revenge
         <br />
-        Ask opponent to pay you 25000$
+        Opponent pays 25000$ 🗡️
       </div>
     </div>
   );
