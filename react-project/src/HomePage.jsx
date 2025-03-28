@@ -23,7 +23,7 @@ const FormPage = () => {
   return (
     <div className="fullScreen">
       <img src={bgImage} alt="bgImage" className="image" />
-      <div className="card">
+      <div className="card-form">
         <img src={lifeLogo} alt="logo" className="logo" />
         <form onSubmit={handleSubmit}>
           <br />
@@ -53,7 +53,7 @@ const FormPage = () => {
               placeholder="Enter Player 2 Name..."
               value={formData.name}
               onChange={handleChange}
-              tyle={{ marginLeft: "10px" }}
+              style={{ marginLeft: "10px" }}
               required
             />
           </div>
