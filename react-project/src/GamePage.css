@@ -7,7 +7,7 @@
     height: 695px;
     color: white;
     box-sizing: border-box;
-    background-color: #404040;
+    background-color: #363636;
     justify-content: space-between;
 }
 
@@ -15,16 +15,30 @@ button {
     color: black;
 }
 
-.ProfileDisplay {
+.Profile-1 {
     background-color: #125359;
     border-radius: 10px;
-    margin-top: 15px;
     text-align: left;
     position: fixed;
     padding: 20px;
-    height: 625px;
+    height: 300px;
     width: 215px;
     left: 25px;
+    top: 25px;
+    padding-top: 0px;
+}
+
+.Profile-2 {
+    background-color: #125359;
+    border-radius: 10px;
+    text-align: left;
+    position: fixed;
+    padding: 20px;
+    height: 300px;
+    width: 215px;
+    left: 25px;
+    top: 365px;
+    padding-top: 0px;
 }
 
 .PlayerName {
@@ -61,6 +75,7 @@ button {
 }
 
 .cell-v {
+    box-sizing: border-box;
     height: 95px;
     width: 120px;
     margin: 2.5px;
@@ -72,9 +87,13 @@ button {
     text-align: center;
     cursor: pointer;
     transition: border-color 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cell-h {
+    box-sizing: border-box;
     height: 85px;
     width: 140px;
     margin: 2.5px;
@@ -86,6 +105,9 @@ button {
     font-family: inherit;
     cursor: pointer;
     transition: border-color 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cell-v:hover {
@@ -101,13 +123,11 @@ button {
 }
 
 .start-cell {
-    border: 2px solid black;
     height: 100px;
     width: 120px;
 }
 
 .end-cell {
-    border: 2px solid black;
     height: 120px;
     width: 120px;
 }
@@ -150,17 +170,17 @@ button {
 
 .col-1 {
     left: 325px;
-    top: 33px;
+    top: 38px;
 }
 
 .row-1 {
-    left: 452px;
+    left: 455px;
     top: 588px;
 }
 
 .col-2 {
     left: 1185px;
-    top: 33px;
+    top: 37px;
 }
 
 .row-2 {
@@ -174,7 +194,7 @@ button {
 }
 
 .row-3 {
-    left: 598px;
+    left: 600px;
     top: 482px;
 }
 
@@ -195,22 +215,27 @@ button {
 
 .cell-0, .cell-5, .cell-10, .cell-15, .cell-20, .cell-25, .cell-30, .cell-35 {
     background-color: rgb(255, 213, 2);
+    color: black;
 }
 
 .cell-1, .cell-6, .cell-11, .cell-16, .cell-21, .cell-26, .cell-31, .cell-36 {
     background-color: rgb(252, 173, 26);
+    color: black;
 }
 
 .cell-2, .cell-7, .cell-12, .cell-17, .cell-22, .cell-27, .cell-32, .cell-37 {
     background-color: rgb(255, 119, 0);
+    color: black;
 }
 
 .cell-3, .cell-8, .cell-13, .cell-18, .cell-23, .cell-28, .cell-33 {
     background-color: rgb(252, 67, 0);
+    color: black;
 }
 
 .cell-4, .cell-9, .cell-14, .cell-19, .cell-24, .cell-29, .cell-34 {
     background-color: rgb(220, 0, 0);
+    color: black;
 }
 
 .Wheel-img {
@@ -222,6 +247,7 @@ button {
 }
 
 .RotateButton {
+    background-color: black;
     border-radius: 50%;
     padding: 10px;
     position: fixed;
@@ -270,17 +296,57 @@ button {
     top: 565px;
 }
 
-.card {
-    background-color: white;
+.card2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
     position: fixed;
     color: black;
-    height: 300px;
-    width: 500px;
-    left: 570px;
-    top: 155px;
+    height: 350px;
+    width: 400px;
+    left: 690px;
+    top: 180px;
+}
+
+.card1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    position: fixed;
+    color: black;
+    height: 225px;
+    width: 250px;
+    left: 765px;
+    top: 250px;
 }
 
 .displayProfessionData {
     display: flex;
     justify-content: space-around;
+}
+
+.cellFill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+}
+
+.buttonFill {
+    
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 150px;
+}
+
+.buttonFill:active {
+    
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 150px;
 }
