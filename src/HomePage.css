@@ -1,0 +1,39 @@
+.image {
+    height: 691.5px;
+    width: 100%;
+}
+
+.logo {
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding: 0px;
+    width: 380px;
+    height: 180px;
+}
+
+input {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: none;
+    height: 35px;
+    width: 200px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    height: 70px;
+    width: 100px;
+    border: none;
+}
+
+.card-form {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.677);
+    position: fixed;
+    height: 500px;
+    width: 460px;
+    left: 570px;
+    top: 100px;
+}
